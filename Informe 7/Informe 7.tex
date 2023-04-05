@@ -1,0 +1,252 @@
+\documentclass[a4paper]{article}
+\usepackage{float}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=2.5cm]{geometry}
+\renewcommand{\baselinestretch}{1.25}
+
+
+\title{Informe Física 7}
+\author{Danny Córdova, Edwin Dávila}
+\date{4 de Abril del 2023}
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+En la presente práctica se estudia la cantidad de movimiento, en particular, se estudia una ley de conservación considerada como una de las más importantes: la conservación del momento lineal. Para realizar esto, se estudió dos tipos de colisiones, una parcialmente inelástica y otra totalmente inelástica. El objetivo principal de esta práctica es demostrar que la conservación del momento lineal es correcta y experimentalmente comprobable. 
+
+\section{Metodología experimental}
+
+Las unidades usadas en este experimento son las del SI. Las incertidumbres de los instrumentos de medida son:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        Balanza digital & $\pm1 g$ \\ \hline
+        Cronómetro digital  & $\pm 0,01 m/s$ \\ \hline
+    \end{tabular}
+    \caption{Incertidumbre de los instrumentos de medida}
+    \label{Incertidumbre de los instrumentos de medida}
+\end{table}
+
+Las medidas que se tienen constantes son: 
+\begin{table}[H]
+\centering
+\begin{tabular}{|ll|ll|}
+\hline
+\multicolumn{2}{|c|}{Comp. inelástico} & \multicolumn{2}{c|}{Inelástico}       \\ \hline
+\multicolumn{1}{|l|}{Móvil 1} & 0,1194 & \multicolumn{1}{l|}{Móvil 1} & 0,1115 \\ \hline
+\multicolumn{1}{|l|}{Móvil 2} & 0,1115 & \multicolumn{1}{l|}{Móvil 2} & 0,1115 \\ \hline
+\end{tabular}
+\end{table}
+
+Las variables directas que se miden en este experimento son:
+\begin{enumerate}
+  \item Velocidad instantánea en el obturador (v).
+  \item Masa de los móviles (m).
+\end{enumerate}
+
+Las variables indirectas que se calculan a partir de la información obtenida son:
+\begin{enumerate}
+  \item Cantidad de movimiento (p).
+  \item Energía cinética (K).
+\end{enumerate}
+
+Las fórmulas usadas en este experimento son:
+
+\begin{equation}
+    \Delta x=\frac{|x_{f}-x_{o}|}{x_{o}}\times 100\%
+\end{equation}
+donde $\Delta$ es la variación porcentual de la variable arbitraria x, $x_{f}$ la cantidad final de la variable y $x_{o}$ la cantidad inicial. 
+
+\begin{equation}
+    K=\frac{p^2}{2m}
+\end{equation}
+donde K es la energía cinética, p la cantidad de movimiento y m la masa del objeto. 
+
+\begin{equation}
+    e=-\frac{V_{1f}-V_{2f}}{V_{1i}-V_{2i}}
+\end{equation}
+donde e es el coeficiente de restitución, $V_{1f}$ y $ V_{2f}$ las velocidades después de la colisión y $V_{1i}$ y $V_{2i}$ las velocidades antes de la colisión.
+
+\section{Resultado y observaciones}
+Se va a tener en consideración dos tipos de choques.
+
+\
+
+Para el choque completamente inelástico:
+
+Se tiene la cantidad de movimiento inicial y final en base a los datos de la tabla situada en anexos, sus unidades están dadas por $kg \frac{m}{s}$:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+        Cant. de mov. & Móvil 1 & Móvil 2 & Móvil 1 Y 2  \\ \hline
+        1 & 0 & 0,0359 & 0,0723  \\ \hline
+        2 & 0 & 0,0329 & 0,0656  \\ \hline
+        3 & 0 & 0,0351 & 0,0831  \\ \hline
+        4 & 0 & 0,0335 & 0,0679  \\ \hline
+        5 & 0 & 0,0324 & 0,0649  \\ \hline
+        6 & 0 & 0,0340 & 0,0679  \\ \hline
+        7 & 0 & 0,0342 & 0,0681  \\ \hline
+        8 & 0 & 0,0357 & 0,0716  \\ \hline
+        9 & 0 & 0,0359 & 0,0720  \\ \hline
+        10 & 0 & 0,0351 & 0,0702  \\ \hline
+    \end{tabular}
+    \caption{Cantidad de movimiento completamente choque inelástico}
+\end{table}
+
+Ahora calculamos la variación porcentual de cantidad de movimiento usando (1):
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+        1,013\%  & 0,994\%  & 1,367\%  & 1,029\%  & 1,000\%  & 0,996\%  & 0,990\%  & 1,006\%  & 1,007\%  & 0,999\%  \\ \hline
+    \end{tabular}
+    \caption{Variación porcentual cantidad de movimiento completamente choque inelástico}
+\end{table}
+
+Procedemos con el cálculo de la energía inicial y durante el choque(final) considerando la energía cinética ya que es la única presente en este: 
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        Energía inicial & 0,0058 & 0,0049 & 0,0055 & 0,0050 & 0,0047 & 0,0052 & 0,0053 & 0,0057 & 0,0058 & 0,0055 \\ \hline
+        Energía final  & 0,0113  & 0,0093  & 0,0150  & 0,0100  & 0,0091  & 0,0100  & 0,0100  & 0,0111  & 0,0112  & 0,0107  \\ \hline
+    \end{tabular}
+    \caption{Energía inicial y final choque completamente inelástico}
+\end{table}
+
+Finalmente calculamos la variación porcentual de energías usando (1): 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+        0,957\%  & 0,919\%  & 1,705\%  & 0,989\%  & 0,931\%  & 0,924\%  & 0,912\%  & 0,943\%  & 0,944\%  & 0,929\%  \\ \hline
+    \end{tabular}
+    \caption{Variación porcentual energías choque completamente inelástico}
+\end{table}
+
+Para el choque inelástico:
+
+Se considera la cantidad de movimiento inicial y final usando la tabla de los anexos, sus unidades están dadas por $kg \frac{m}{s}$:
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+        Cant. de mov. & Movil 1 i & Movil 2 i & Movil 1 f & Movil 2 f  \\ \hline
+        1 & 0 & 0,0347 & 0,0168 & 0,0159  \\ \hline
+        2 & 0 & 0,0351 & 0,0143 & 0,0132  \\ \hline
+        3 & 0 & 0,0378 & 0,0185 & 0,0171  \\ \hline
+        4 & 0 & 0,0399 & 0,0190 & 0,0182  \\ \hline
+        5 & 0 & 0,0345 & 0,0177 & 0,0174  \\ \hline
+        6 & 0 & 0,0386 & 0,0186 & 0,0182  \\ \hline
+        7 & 0 & 0,0371 & 0,0176 & 0,0172  \\ \hline
+        8 & 0 & 0,0328 & 0,0184 & 0,0181  \\ \hline
+        9 & 0 & 0,0372 & 0,0209 & 0,0202  \\ \hline
+        10 & 0 & 0,0369 & 0,0192 & 0,0186  \\ \hline
+    \end{tabular}
+    \caption{Cantidad de movimiento choque inelástico}
+\end{table}
+
+Calculamos entonces la variación porcentual para cada toma de datos:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+        0,055\%  & 0,219\%  & 0,059\%  & 0,070\%  & 0,019\%  & 0,046\%  & 0,063\%  & 0,112\%  & 0,102\%  & 0,024\%  \\ \hline
+    \end{tabular}
+    \caption{Variación porcentual cantidad de movimiento choque inelástico}
+\end{table}
+
+Se calcula la energía inicial y final usando (2):
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        Energia inicial & 0,0054 & 0,0055 & 0,0064 & 0,0071 & 0,0053 & 0,0067 & 0,0062 & 0,0048 & 0,0062 & 0,0061 \\ \hline
+        Energía final  & 0,0024  & 0,0017  & 0,0028  & 0,0031  & 0,0028  & 0,0030  & 0,0027  & 0,0030  & 0,0038  & 0,0032  \\ \hline
+    \end{tabular}
+    \caption{Energía inicial y final choque inelástico}
+\end{table}
+
+Finalmente calculamos la variación porcentual de energías usando (1): 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+        0,553\%  & 0,695\%  & 0,557\%  & 0,567\%  & 0,480\%  & 0,545\%  & 0,561\%  & 0,381\%  & 0,393\%  & 0,475\%  \\ \hline
+    \end{tabular}
+    \caption{Variación porcentual energías choque inelástico}
+\end{table}
+
+Además de los datos antes obtenidos, se analizaron los choques con la plataforma Tracker, con ayuda de esta plataforma se pudo comprobar que las velocidades obtenidas por los sensores eran las correctas. 
+
+Por último, haciendo uso de la aplicación Phyphox y de la fórmula 3, el coeficiente de restauración entre la canica y el suelo es de: 0.7923.
+
+Y el coeficiente de restauración de al canica con unas hojas es de: 0.7395.
+
+\section{Conclusiones}
+Analizando los datos obtenidos al realizar la práctica se puede notar que la variación porcentual tanto de la cantidad de movimiento como de la energía es mínima (inferior al 1$\%$ en la mayoría de los casos). La variación se debe principalmente a la pérdida de energía debida a la fricción entre los móviles y la riel y la fricción con el aire. Si se hubiera tomado en cuenta a estas fuerzas, ese porcentaje hubiera sido más despreciable aún, demostrando de esta manera la conservación del momento lineal.
+
+\section{Anexos}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+        ~ & U1 & U2  \\ \hline
+        1 & 0,322 & 0,313  \\ \hline
+        2 & 0,30 & 0,284  \\ \hline
+        3 & 0,315 & 0,36  \\ \hline
+        4 & 0,3 & 0,294  \\ \hline
+        5 & 0,291 & 0,281  \\ \hline
+        6 & 0,305 & 0,294  \\ \hline
+        7 & 0,307 & 0,295  \\ \hline
+        8 & 0,32 & 0,31  \\ \hline
+        9 & 0,322 & 0,312  \\ \hline
+        10 & 0,315 & 0,304  \\ \hline
+    \end{tabular}
+    \caption{Velocidades choque completamente inelástico}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+        ~ & U1 & U2 & U3  \\ \hline
+        1 & 0,311 & 0,151 & 0,143  \\ \hline
+        2 & 0,315 & 0,128 & 0,118  \\ \hline
+        3 & 0,339 & 0,166 & 0,153  \\ \hline
+        4 & 0,358 & 0,17 & 0,163  \\ \hline
+        5 & 0,309 & 0,159 & 0,156  \\ \hline
+        6 & 0,346 & 0,167 & 0,163  \\ \hline
+        7 & 0,333 & 0,158 & 0,154  \\ \hline
+        8 & 0,294 & 0,165 & 0,162  \\ \hline
+        9 & 0,334 & 0,187 & 0,181  \\ \hline
+        10 & 0,331 & 0,172 & 0,167  \\ \hline
+    \end{tabular}
+    \caption{Velocidades choque inelástico}
+\end{table}
+\end{document}
