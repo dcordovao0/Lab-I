@@ -1,0 +1,236 @@
+\documentclass[a4paper]{article}
+\usepackage{float}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{longtable} 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=2.5cm]{geometry}
+\renewcommand{\baselinestretch}{1.25}
+
+
+\title{Informe Física 9}
+\author{Danny Córdova, Edwin Dávila}
+\date{28 de Abril del 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+En la presente práctica se abordará sobre la dinámica rotacional. Esta formulación de la dinámica newtoniana permite no solo calcular la trayectoria de objetos puntuales, sino también tomar en cuenta la rotación en objetos extendidos, algo que no se podía hacer con la dinámica traslacional. El objetivo principal de esta práctica es medir momentos de inercia de diferentes configuraciones de objetos, medir también la energía cinética de cada configuración y hacer una comparación de las medidas experimentales obtenidas contra las medidas calculadas teóricamente.
+
+\section{Metodología experimental}
+
+Las unidades usadas en este experimento son las del SI. Las incertidumbres de los instrumentos de medida son:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        Balanza digital & $\pm1 g$ \\ \hline
+        Regla  & $\pm 1 mm$ \\ \hline
+        Calibrador Vernier  & $\pm 0.02 mm$ \\ \hline
+        Cronómetro digital & $\pm 0.01 s$ \\ \hline
+    \end{tabular}
+    \caption{Incertidumbre de los instrumentos de medida}
+    \label{Incertidumbre de los instrumentos de medida}
+\end{table}
+
+Las medidas que se tienen como constantes son: 
+\begin{table}[H]
+\centering 
+\begin{tabular}{|c|c|}
+    \hline
+        Diámetro del rotor & 47.93$ \pm 0.02 mm$ \\ \hline
+        Diámetro del disco & 253 $ \pm 1 mm$ \\ \hline
+        Diámetro interior del aro & 222 $ \pm 1 mm$ \\ \hline
+        Diámetro exterior del aro & 253 $ \pm 1 mm$ \\ \hline
+        Longitud de la barra  & 863 $ \pm 1 mm$ \\ \hline
+        Ancho de la barra & 19.2 $ \pm 1 mm$ \\ \hline
+        Masa del portamasas & 50 $ \pm 1 g$ \\ \hline
+        Masa del aro & 4870 $ \pm 1 g$\\ \hline
+        Masa del disco & 4970 $ \pm 1 g$ \\ \hline
+        Altura a la que cae el portamasas & $500 \pm 1 mm$ \\ \hline
+        
+\end{tabular}
+ \caption{Constantes del experimento}
+\end{table}
+
+Las variables directas que se miden en este experimento son:
+\begin{enumerate}
+  \item Tiempo de caída del portamasas (t).
+\end{enumerate}
+
+Las variables indirectas que se calculan a partir de la información obtenida son:
+\begin{enumerate}
+  \item Momentos de Inercia de las configuraciones (I).
+  \item Energía cinética (K).
+\end{enumerate}
+
+Las fórmulas usadas en este experimento son:
+
+\begin{equation}
+    \mu= \frac{\displaystyle\sum_{i=1}^{n} x_i}{n}
+\end{equation}
+donde $\mu$ es la media (promedio) del conjunto $x_i$ y n el número de elementos del conjunto $x_i$.
+  
+\begin{equation}
+    \Vec{\alpha}=\frac{\Vec{a}}{r }
+\end{equation}
+donde $\Vec{\alpha}$ es la aceleración angular del sistema, $Vec{a}$ la aceleración traslacional y r el radio del rotor. 
+
+\begin{equation}
+    x(t)=\frac{1}{2}at^2
+\end{equation}
+donde x es la distancia, t el tiempo y esta fórmula sirve para una aceleración constante.
+
+\begin{equation}
+    \Vec{\tau}=I\Vec{\alpha}
+\end{equation}
+donde $\Vec{\tau}$ es el torque y I el momento de inercia.
+
+\begin{equation}
+   \Vec{\tau}=T=m(g-a)
+\end{equation}
+donde T es la tensión de la cuerda, m la masa del objeto y g la aceleración de la gravedad, esta fórmula se usa en este experimento por cómo está diseñado el mismo.
+
+\begin{equation}
+    I=\int dm R^2
+\end{equation}
+donde I es el momento de inercia teórico de cualquier objeto, dm el diferencial de masa y R la distancia de
+
+\begin{equation}
+    I=\rho \int R^2dV
+\end{equation}
+donde $\rho$ es la densidad del objeto y dV el diferencial de volumen, esta fórmula es la misma de (5) solo que con el diferencial de masa escrito como: $dm=\rho dV$. Es la fórmula que permite calcular el momento de inercia.
+
+\begin{equation}
+    \Delta I=I_T-I_a
+\end{equation}
+donde $\Delta I$ es la inercia de cada objeto, $I_T$ la inercia total calculada y $I_a$ la inercia aislada del rotor.
+
+\begin{equation}
+    e=\frac{|I_{exp}-I_{teo}|}{I_{teo}}\times 100\%
+\end{equation}
+donde e es el error porcentual, $I_{exp}$ la inercia experimental y $I_{teo}$ la inercia teórica.
+
+\section{Resultados y observaciones}
+
+Se considera el promedio de los 10 tiempos para cada caso, basándonos en la tabla situada en anexos:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+        ~ & Aro & Barra & Disco & Libre  \\ \hline
+        Promedio & 6,626 & 5,475 & 5,161 & 1,243  \\ \hline
+    \end{tabular}
+    \caption{Promedio de tiempos}
+\end{table}
+
+Ahora se necesita calcular el momento de inercia en cada caso donde se considera como la diferencia entre el sistema aislado y el sistema completo, usando (8).
+
+Para conocer la inercia total y la inercia aislada, se usa (4). Para usar esta fórmula se necesita conocer el torque y la aceleración angular, Para $\Vec{\tau}$ se usa (5) y para $\Vec{\alpha}$ se usa (2) y (3).
+
+Usando las fórmulas antes descritas se tiene que la aceleración angular en cada caso es de: 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+        ~ & Aro & Barra & Disco & Libre \\ \hline
+        Aceleración angular & 0,9504 & 1,3920 & 1,5666 & 27,0072  \\ \hline
+    \end{tabular}
+    \caption{Aceleración angular}
+\end{table}
+
+Se procede con el cálculo del torque:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+        ~ & Aro & Barra & Disco & Libre \\ \hline
+        Torque & 0,0701 & 0,0700 & 0,0700 & 0,0656 \\ \hline
+    \end{tabular}
+    \caption{Torque del sistema completo}
+\end{table}
+
+A partir de estos se tiene una inercia experimental considerando la aceleración angular $\alpha$ y el torque $\tau$ considerando que es la del sistema completo, usando la inercia del caso "Libre" se obtiene la inercia en cada caso.
+
+\
+
+Usando (7), se calcula el momento de inercia experimental del disco, la barra y el aro.
+
+\[I_{disco}=\frac{1}{4}MR^2\]
+
+\[I_{aro}=\frac{1}{2}M(R_1^2+R_2^2)\]
+
+\[I_{barra}=\frac{1}{12}M(b^2+c^2)\]
+
+Obtenemos así inercia experimental y teórica:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+        ~ & Aro & Barra & Disco  \\ \hline
+        Experimental & 0,0713 & 0,0479 & 0,0423  \\ \hline
+        Teórica & 0,0690 & 0,0497 & 0,0398  \\ \hline
+    \end{tabular}
+    \caption{Comparación inercia experimental y teórica}
+\end{table}
+
+Ahora calculamos el error porcentual respectivo para cada uno de los casos, usando (9):
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+        ~ & Aro & Barra & Disco  \\ \hline
+        Error porcentual & 6,947\% & 1,265\% & 12,360\%  \\ \hline
+    \end{tabular}
+    \caption{Error porcentual de la inercia}
+\end{table}
+
+\section{Conclusiones}
+Como se puede observar en los resultados, el error de los momentos de inercia teórico y experimental está dentro de los rangos aceptables. El momento de inercia del aro es el mayor, le sigue la barra y por último el disco. Esto coincide con las observaciones de que el aro es el sólido que más tiempo hizo que se demore el portamasas en bajar los 50 cm establecidos, ya que es el sólido con mayor inercia de los 3. Los objetivos para la presente práctica fueron cumplidos satisfactoriamente, los errores que se obtuvieron se pueden deber a la imprecisión a la hora de toma de los tiempos y a que el sistema no es ideal, pues existe una fuerza de fricción en la cuerda y en la base rotatoria, variables que no se tomaron en cuenta en el experimento.
+
+
+\section{Referencias}
+
+\begin{enumerate}
+    \item Herrera, N. (2019). \textit{Dinámica rotacional}.
+\end{enumerate}
+
+
+\section{Anexos}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+        Aro & Barra & Disco & Libre  \\ \hline
+        6,57 & 5,26 & 5,19 & 1,32  \\ \hline
+        6,61 & 5,66 & 5,2 & 1,33  \\ \hline
+        6,57 & 5,32 & 5,14 & 1,25  \\ \hline
+        6,64 & 5,64 & 5,13 & 1,19  \\ \hline
+        6,57 & 5,48 & 5,06 & 1,19  \\ \hline
+        6,67 & 5,52 & 5,19 & 1,23  \\ \hline
+        6,64 & 5,59 & 5,12 & 1,19  \\ \hline
+        6,69 & 5,52 & 5,18 & 1,26  \\ \hline
+        6,7 & 5,45 & 5,2 & 1,26  \\ \hline
+        6,6 & 5,31 & 5,2 & 1,21  \\ \hline
+    \end{tabular}
+    \caption{Tiempos de caída}
+\end{table}
+
+
+\end{document}
